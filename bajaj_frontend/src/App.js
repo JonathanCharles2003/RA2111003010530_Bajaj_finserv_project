@@ -42,7 +42,7 @@ function App() {
       };
 
       // Make POST request to the backend API
-      const response = await axios.post('http://localhost:3000/bfhl', payload);
+      const response = await axios.post('https://ra2111003010530-bajaj-finserv-project.vercel.app/bfhl', payload);
       setResponseData(response.data);
       setIsSubmitted(true);
       setErrorMessage('');
@@ -106,7 +106,7 @@ function App() {
   // Handle GET request to /bfhl
   const handleGetRequest = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/bfhl'); // GET request to /bfhl
+      const response = await axios.get('https://ra2111003010530-bajaj-finserv-project.vercel.app/bfhl'); // GET request to /bfhl
       setGetData(response.data); // Set the GET response data
     } catch (error) {
       console.error('Error during GET request:', error);
